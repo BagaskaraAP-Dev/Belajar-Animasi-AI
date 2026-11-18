@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belajar Animasi AI — Claude Code, Gemini & Antigravity</title>
+  <meta name="description" content="Dokumentasi lengkap belajar membuat animasi AI 2D prosedural dan video-as-code menggunakan Claude Code, Google Gemini, dan Antigravity oleh Bagaskara Amukti Palapa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="#">
+        <span>Bagaskara Amukti Palapa</span>
+        <span class="brand-badge">AI Animation Lab</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#triad">Framework AI</a></li>
+          <li><a href="#storyboard">Storyboard</a></li>
+          <li><a href="#teknis">Bedah Kode</a></li>
+          <li><a href="#pelajaran">Pelajaran</a></li>
+          <li><a href="https://github.com/BagaskaraAP-Dev/Belajar-Animasi-AI" target="_blank" rel="noopener">GitHub Repo ↗</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="date-pill">
+          <span>📅 Rilis Dokumentasi: 18 November 2026</span>
+          <span>•</span>
+          <span>Versi 1.0</span>
+        </div>
+        <h1>
+          Membuat Animasi AI dengan <span class="gradient-text">Claude Code, Gemini, & Antigravity</span>
+        </h1>
+        <p class="hero-lead">
+          Catatan belajar dan blueprint produksi animasi 2D prosedural untuk Instagram Reels tanpa software editing video konvensional. Seluruh visual, gerak karakter, hingga musik latar digambar dan disintesis murni lewat kode program.
+        </p>
+
+        <div class="meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Format Video</span>
+            <span class="meta-val">Reels 1080×1920 (9:16)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Framerate & Durasi</span>
+            <span class="meta-val">30 FPS · 42 Detik</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Engine Rendering</span>
+            <span class="meta-val">PyCairo + FFmpeg</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Kreator</span>
+            <span class="meta-val">Bagaskara Amukti Palapa</span>
+          </div>
+        </div>
+
+        <div class="cta-group">
+          <a href="#triad" class="btn btn-primary">Mulai Pelajari Framework</a>
+          <a href="https://github.com/BagaskaraAP-Dev/Belajar-Animasi-AI" class="btn btn-secondary" target="_blank" rel="noopener">Lihat Kode Sumber di GitHub</a>
+          <a href="https://www.instagram.com/bgskara_ap" class="btn btn-secondary" target="_blank" rel="noopener">Instagram @bgskara_ap</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sinergi Tripartit AI -->
+    <section id="triad" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Arsitektur Kolaborasi</span>
+          <h2 class="section-title">Sinergi Tripartit AI</h2>
+          <p class="section-desc">
+            Animasi ini tidak dihasilkan dari tool generator otomatis "sekali klik", melainkan orkestrasi tiga pilar kecerdasan buatan dengan keahlian khusus di tiap lapisan produksi.
+          </p>
+        </div>
+
+        <div class="triad-grid">
+          <!-- Gemini -->
+          <div class="triad-card triad-gemini">
+            <span class="triad-badge badge-gemini">Creative & Multimodal</span>
+            <h3 class="triad-title">Google Gemini</h3>
+            <p class="triad-role">Director & Visual Consistency Anchor</p>
+            <ul class="triad-list">
+              <li><strong>Naskah & Timing:</strong> Merumuskan script voiceover dengan pacing Reels yang dinamis dan gaul.</li>
+              <li><strong>Konsistensi Karakter:</strong> Memastikan identitas visual Bagaskara (hoodie, celana, postur, kamar tidur) konsisten antar adegan.</li>
+              <li><strong>B-Roll & Storyboard:</strong> Menghasilkan acuan visual pencahayaan, sudut kamera, dan storyboard 8 adegan.</li>
+            </ul>
+            <div class="triad-tech-tags">
+              <span class="tag">Gemini Pro Vision</span>
+              <span class="tag">Prompt Anchoring</span>
+              <span class="tag">Storyboard AI</span>
+            </div>
+          </div>
+
+          <!-- Claude Code -->
+          <div class="triad-card triad-claude">
+            <span class="triad-badge badge-claude">Logic & Procedural Math</span>
+            <h3 class="triad-title">Claude Code</h3>
+            <p class="triad-role">Algorithmic Animator & Audio Synthesizer</p>
+            <ul class="triad-list">
+              <li><strong>PyCairo 2D Engine:</strong> Mengubah konsep visual menjadi formula vektor murni sebagai fungsi waktu $f(t)$.</li>
+              <li><strong>Inverse Kinematics (IK):</strong> Menghitung sudut sendi bahu dan siku lengan 2-tulang secara otomatis dengan Hukum Cosinus.</li>
+              <li><strong>Sintesis Audio NumPy:</strong> Menghasilkan akor musik lo-fi (Fmaj7–G7–Em7–Am7) dan efek suara SFX tanpa aset eksternal.</li>
+            </ul>
+            <div class="triad-tech-tags">
+              <span class="tag">Python 3</span>
+              <span class="tag">pycairo</span>
+              <span class="tag">NumPy Audio</span>
+              <span class="tag">FFmpeg Pipe</span>
+            </div>
+          </div>
+
+          <!-- Google Antigravity -->
+          <div class="triad-card triad-antigravity">
+            <span class="triad-badge badge-antigravity">Orchestrator & Video-as-Code</span>
+            <h3 class="triad-title">Google Antigravity</h3>
+            <p class="triad-role">Autonomous Agent & Platform Guard</p>
+            <ul class="triad-list">
+              <li><strong>Agentic Orchestration:</strong> Mengatur sub-agent, otomatisasi render paralel, dan manajemen pipeline pipeline otonom.</li>
+              <li><strong>Remotion Video-as-Code:</strong> Mengintegrasikan komponen React-based video untuk transisi berbasis kurva pegas (Spring easing).</li>
+              <li><strong>Safe-Zone & Audio Sync:</strong> Memvalidasi area aman Reels 9:16 vs Feed 4:5 serta menyelaraskan timestamp ucapan (WordBoundary).</li>
+            </ul>
+            <div class="triad-tech-tags">
+              <span class="tag">Antigravity CLI</span>
+              <span class="tag">Remotion React</span>
+              <span class="tag">Whisper Sync</span>
+              <span class="tag">Safe-Zone Guard</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p>
+            <strong>Prinsip Inti:</strong> AI bertindak sebagai rekan kerja dan amplifier logika teknis. Keputusan artistik, ritme penceritaan, serta identitas lokal (khas Palembang & mahasiswa IT) tetap dipegang penuh oleh kreator manusia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Storyboard & Adegan -->
+    <section id="storyboard" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Alur Narasi & Visual</span>
+          <h2 class="section-title">Storyboard & Breakdown Adegan</h2>
+          <p class="section-desc">
+            Mengangkat tema tren "Senin–Jumat vs Weekend" tentang mahasiswa IT di Palembang: ngoprek cyber security, AI, dan vibe coding di hari kerja, lalu menikmati hidup di luar layar saat akhir pekan.
+          </p>
+        </div>
+
+        <div class="storyboard-preview">
+          <img src="assets/storyboard.png" alt="Storyboard Reels Animasi Bagaskara" loading="lazy">
+          <div class="storyboard-caption">
+            Storyboard visual 8 adegan: dari kamar ngoding malam hari hingga Jembatan Ampera bertabur kembang api.
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="scene-table">
+            <thead>
+              <tr>
+                <th>Waktu</th>
+                <th>Adegan</th>
+                <th>Aksi Karakter & Visual</th>
+                <th>SFX & Musik</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="time-badge">0:00 – 0:08</span></td>
+                <td><strong>Senin – Jumat</strong></td>
+                <td>Karakter ngoding larut malam, kartu notifikasi CTF & AI bermunculan hingga +99, keringat dingin.</td>
+                <td>Lo-fi drum minimal, SFX pop beruntun, alert ding.</td>
+              </tr>
+              <tr>
+                <td><span class="time-badge">0:08 – 0:13</span></td>
+                <td><strong>Sabtu – Minggu</strong></td>
+                <td>Laptop ditutup dengan lega... lalu sedikit diintip kembali. Muncul gelembung <em>HEHE</em>.</td>
+                <td>Suara tutupan laptop, akor arpeggio weekend menyala.</td>
+              </tr>
+              <tr>
+                <td><span class="time-badge">0:13 – 0:19</span></td>
+                <td><strong>Car Free Day → Night</strong></td>
+                <td>Berjalan santai bersama teman. Transisi langit siang menjadi malam, lampu kota menyala.</td>
+                <td>Bassline ceria, SFX whoosh transisi wipe miring.</td>
+              </tr>
+              <tr>
+                <td><span class="time-badge">0:19 – 0:22</span></td>
+                <td><strong>Nongkrong Warkop</strong></td>
+                <td>Menikmati pempek dan es teh di bawah lampu gantung warkop khas Palembang. Teks <em>WKWKWK</em>.</td>
+                <td>Akor hangat, suara seruput santai.</td>
+              </tr>
+              <tr>
+                <td><span class="time-badge">0:22 – 0:25</span></td>
+                <td><strong>Main Catur</strong></td>
+                <td>Karakter berpikir taktis, tangan bergerak dengan IK mengangkat ratu: <em>SKAKMAT!</em> Raja lawan roboh.</td>
+                <td>SFX ketukan kayu catur tegap, bell ding.</td>
+              </tr>
+              <tr>
+                <td><span class="time-badge">0:25 – 0:28</span></td>
+                <td><strong>Nonton Bioskop</strong></td>
+                <td>Santai makan popcorn di bioskop gelap, mendadak adegan horor (jumpscare): popcorn terlempar.</td>
+                <td>SFX jumpscare dramatis, bunyi tumpahan renyah.</td>
+              </tr>
+              <tr>
+                <td><span class="time-badge">0:28 – 0:32</span></td>
+                <td><strong>Keliling Palembang</strong></td>
+                <td>Mengendarai skuter matic di tepian Sungai Musi dengan latar megah Jembatan Ampera.</td>
+                <td>Deru mesin skuter halus, angin sore.</td>
+              </tr>
+              <tr>
+                <td><span class="time-badge">0:32 – 0:42</span></td>
+                <td><strong>Penutup (Ampera)</strong></td>
+                <td>Ampera malam dengan kembang api, kartu identitas IT Enthusiast, ajakan follow @bgskara_ap.</td>
+                <td>SFX kembang api boom, musik klimaks lalu fade-out.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bedah Teknis & Kode -->
+    <section id="teknis" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Arsitektur Pemrograman</span>
+          <h2 class="section-title">Bedah Logika & Skrip Kode</h2>
+          <p class="section-desc">
+            Empat implementasi teknis kunci yang memungkinkan video berkualitas tinggi dirender cepat dengan efisiensi memori maksimal.
+          </p>
+        </div>
+
+        <!-- Snippet 1 -->
+        <div class="code-box">
+          <div class="code-header">
+            <span class="code-title">1. Inverse Kinematics (IK 2-Tulang) Berbasis Hukum Cosinus</span>
+            <span class="code-lang">Python (src/lib.py)</span>
+          </div>
+          <pre><code>def ik(sh, tg, l1, l2, elbow='down'):
+    """
+    Menghitung sudut sendi bahu (a1) dan siku (a2) secara analitik
+    sehingga ujung tangan menyentuh target 'tg' secara natural.
+    """
+    dx, dy = tg[0] - sh[0], tg[1] - sh[1]
+    d = math.hypot(dx, dy)
+    d = clamp(d, abs(l1 - l2) + 1, l1 + l2 - 0.5)
+    phi = ang_of(dx, dy)
+    
+    # Perhitungan sudut siku via Hukum Cosinus: c^2 = a^2 + b^2 - 2ab*cos(C)
+    c = clamp((l1 * l1 + d * d - l2 * l2) / (2 * l1 * d), -1, 1)
+    al = math.degrees(math.acos(c))
+    
+    best = None
+    for a1 in (phi + al, phi - al):
+        ex, ey = sh[0] + l1 * vdir(a1)[0], sh[1] + l1 * vdir(a1)[1]
+        a2 = ang_of(tg[0] - ex, tg[1] - ey)
+        key = ey if elbow == 'down' else -ey
+        if best is None or key > best[0]:
+            best = (key, a1, a2)
+    return best[1], best[2]</code></pre>
+        </div>
+
+        <!-- Snippet 2 -->
+        <div class="code-box">
+          <div class="code-header">
+            <span class="code-title">2. Sintesis Musik Akor Lo-Fi & Efek Suara Prosedural</span>
+            <span class="code-lang">Python + NumPy (src/audio.py)</span>
+          </div>
+          <pre><code># Progresi Akor: Fmaj7 - G7 - Em7 - Am7 pada tempo 100 BPM
+chords = [[53, 57, 60, 64], [55, 59, 62, 65], [52, 55, 59, 62], [57, 60, 64, 67]]
+roots  = [41, 43, 40, 45]
+
+for b in range(nb):
+    t0 = b * bar
+    ch = chords[b % 4]
+    n  = int(bar * SR)
+    tt = np.arange(n) / SR
+    
+    # Pad harmonis dengan gelombang sinus berlapis dan detune halus (1.003x)
+    pad = sum(np.sin(2 * np.pi * nf(m) * tt) + 0.4 * np.sin(2 * np.pi * nf(m) * 1.003 * tt) for m in ch)
+    pad *= np.minimum(tt / 0.3, 1) * np.minimum((bar - tt) / 0.3, 1)
+    add(pad, t0, 0.035)
+
+# Efek Suara Ding Matematis
+def sfx_ding():
+    n = int(1.2 * SR); t = np.arange(n) / SR
+    return (np.sin(2*np.pi*1318*t) + 0.5*np.sin(2*np.pi*2637*t) + 0.3*np.sin(2*np.pi*1975*t)) * env(n, 0.002, 0.35) * 0.3</code></pre>
+        </div>
+
+        <!-- Snippet 3 -->
+        <div class="code-box">
+          <div class="code-header">
+            <span class="code-title">3. Zero-Disk Render Pipeline: Pipe Raw BGRA Langsung ke FFmpeg</span>
+            <span class="code-lang">Python (src/render.py)</span>
+          </div>
+          <pre><code># Membuka subproses FFmpeg yang membaca frame langsung dari stdin
+p = subprocess.Popen([
+    'ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgra',
+    '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
+    '-c:v', 'libx264', '-crf', '18', '-preset', 'veryfast',
+    '-pix_fmt', 'yuv420p', '-r', str(FPS), tmp
+], stdin=subprocess.PIPE)
+
+s = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
+for f in range(f0, f1):
+    c = cairo.Context(s)
+    c.set_source_rgb(0, 0, 0); c.paint()
+    frame(c, f / FPS)      # Menggambar adegan pada waktu f / FPS
+    s.flush()
+    p.stdin.write(bytes(s.get_data()))  # Streaming byte langsung ke stdin FFmpeg
+p.stdin.close()</code></pre>
+        </div>
+
+        <!-- Snippet 4 -->
+        <div class="code-box">
+          <div class="code-header">
+            <span class="code-title">4. Automatic Music Ducking & Loudness Normalization (-14 LUFS)</span>
+            <span class="code-lang">Python + FFmpeg (src/audio.py)</span>
+          </div>
+          <pre><code># Deteksi energi suara narator untuk auto-ducking musik latar
+e = np.abs(vo)
+k = int(0.15 * SR)
+e = np.convolve(e, np.ones(k) / k, mode='same')
+e = np.clip(e / 0.08, 0, 1)
+
+# Reduksi musik sebesar 50% selama pembicara bersuara
+out = (out / np.max(np.abs(out))) * 0.6 * (1.0 - 0.5 * e) + (vo * 0.85)
+
+# FFmpeg loudnorm sesuai standar Instagram Reels (-14 LUFS, True Peak -1.5)
+# ffmpeg -i audio_mix.wav -af "loudnorm=I=-14:TP=-1.5:LRA=11" audio_final.wav</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safe Zone & Format Platform -->
+    <section id="safezone" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Desain Platform</span>
+          <h2 class="section-title">Kepatuhan Safe Zone Reels (9:16 vs 4:5)</h2>
+          <p class="section-desc">
+            Mengapa teks tidak boleh ditaruh sembarangan di canvas vertikal.
+          </p>
+        </div>
+
+        <div class="matrix-grid">
+          <div class="matrix-card">
+            <h3>Resolusi Penuh (9:16)</h3>
+            <p>1080 × 1920 piksel untuk penayangan penuh di tab Instagram Reels.</p>
+            <p>Area atas sering tertutup tombol back dan audio judul. Area bawah tertutup caption dan username.</p>
+          </div>
+          <div class="matrix-card">
+            <h3>Crop Feed & Grid (4:5)</h3>
+            <p>1080 × 1350 piksel saat video muncul di feed utama pengguna.</p>
+            <p>Bagian atas terpotong 285 piksel dan bawah terpotong 285 piksel. Semua teks inti wajib berada di tengah!</p>
+          </div>
+          <div class="matrix-card">
+            <h3>Formula Safe Zone</h3>
+            <p><strong>Y-Min:</strong> 285 px &bull; <strong>Y-Max:</strong> 1635 px</p>
+            <p>Semua chip status, notifikasi, dan watermark diletakkan di dalam batas ini agar selalu terbaca utuh di kedua format.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pelajaran Berharga -->
+    <section id="pelajaran" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Evaluasi & Refleksi</span>
+          <h2 class="section-title">5 Pelajaran Berharga</h2>
+          <p class="section-desc">
+            Rangkuman pengalaman nyata dari iterasi v1 hingga rilis final siap tayang.
+          </p>
+        </div>
+
+        <div class="lessons-grid">
+          <div class="lesson-card">
+            <span class="lesson-num">01</span>
+            <h4>Animasi Adalah Fungsi Waktu Murni</h4>
+            <p>Dengan membuat setiap frame dihitung dari variabel waktu <code>t</code> murni, revisi satu adegan tidak pernah merusak adegan lain. Render dapat diparalelkan di CPU multi-core tanpa overhead memori.</p>
+          </div>
+          <div class="lesson-card">
+            <span class="lesson-num">02</span>
+            <h4>IK Menghemat Waktu Rigging 90%</h4>
+            <p>Mengatur rotasi bahu dan siku secara manual membuat animasi patah-patah. Dengan Inverse Kinematics dua tulang, kita cukup menetapkan target koordinat tangan, dan siku akan menekuk otomatis.</p>
+          </div>
+          <div class="lesson-card">
+            <span class="lesson-num">03</span>
+            <h4>Audio Menentukan 50% Kualitas</h4>
+            <p>Video visual terbaik sekalipun akan terasa amatir jika volumenya tidak seimbang. Auto-ducking dan normalisasi loudness ke -14 LUFS membuat suara jernih dan nyaman didengar di smartphone.</p>
+          </div>
+          <div class="lesson-card">
+            <span class="lesson-num">04</span>
+            <h4>Voiceover Asli Mengalahkan TTS AI</h4>
+            <p>Meski telah bereksperimen dengan model Piper TTS dan vocoder pitch shifting, rekaman suara asli manusia tetap memiliki emosi, jeda alami, dan artikulasi bahasa gaul Palembang yang belum bisa ditandingi AI offline.</p>
+          </div>
+          <div class="lesson-card">
+            <span class="lesson-num">05</span>
+            <h4>Arsitektur Video-as-Code Sangat Tangguh</h4>
+            <p>Menggabungkan Claude Code (logika matematika), Gemini (arahan visual), dan Antigravity (orkestrasi agentic) membuktikan bahwa video kartun berkualitas tinggi dapat diproduksi secara otonom dan bersih tanpa software berat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deployment & Cleanup Note -->
+    <section class="section">
+      <div class="container">
+        <div class="callout" style="border-left-color: var(--accent-gold); background: rgba(245, 158, 11, 0.08);">
+          <p style="color: #fef3c7;">
+            <strong style="color: #fbbf24;">Transparansi Deployment & Pembersihan File Animasi:</strong><br>
+            Sesuai instruksi pengembangan, file video hasil render <code>.mp4</code> berukuran besar sengaja dihapus dari repositori setelah proses deployment berhasil. Hal ini menjaga agar repositori tetap ringan, terhindar dari batas ukuran Git LFS, dan memastikan fokus utama ada pada dokumentasi pembelajaran, logika matematika, serta reproduktibilitas kode bagi rekan-rekan pengembang.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>Belajar Animasi AI</strong> &copy; 2026 Bagaskara Amukti Palapa.</p>
+        <p>Teknik Informatika, Universitas Bina Darma, Palembang — <em>dari laptop sampai Ampera!</em></p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/BagaskaraAP-Dev" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.instagram.com/bgskara_ap" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://mooncrust.my.id" target="_blank" rel="noopener">Mooncrust</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+pycairo
+numpy
+soundfile
+fonttools
+# opsional, hanya untuk narasi TTS (src/tts.py)
+sherpa-onnx<2
+pyworld
